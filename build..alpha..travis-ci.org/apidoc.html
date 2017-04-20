@@ -1,0 +1,3432 @@
+<div class="apidocDiv">
+<style>
+/*csslint
+*/
+.apidocDiv {
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.apidocDiv a[href] {
+    color: #33f;
+    font-weight: bold;
+    text-decoration: none;
+}
+.apidocDiv a[href]:hover {
+    text-decoration: underline;
+}
+.apidocCodeCommentSpan {
+    background: #bbf;
+    color: #000;
+    display: block;
+}
+.apidocCodeKeywordSpan {
+    color: #d00;
+    font-weight: bold;
+}
+.apidocCodePre {
+    background: #eef;
+    border: 1px solid;
+    color: #777;
+    padding: 5px;
+    white-space: pre-wrap;
+}
+.apidocFooterDiv {
+    margin-top: 20px;
+    text-align: center;
+}
+.apidocModuleLi {
+    margin-top: 10px;
+}
+.apidocSectionDiv {
+    border-top: 1px solid;
+    margin-top: 20px;
+}
+.apidocSignatureSpan {
+    color: #777;
+    font-weight: bold;
+}
+</style>
+<h1>api documentation for
+    <a
+
+    >blynk-library (v0.4.7)</a>
+</h1>
+<h4>Blynk library implementation for JavaScript (Node.js, Espruino)</h4>
+<div class="apidocSectionDiv"><a
+    href="#apidoc.tableOfContents"
+    id="apidoc.tableOfContents"
+><h1>table of contents</h1></a><ol>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.blynk-library">module blynk-library</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.blynk-library.Blynk">
+            function <span class="apidocSignatureSpan">blynk-library.</span>Blynk
+            <span class="apidocSignatureSpan">(auth, options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.blynk-library.BoardMRAA">
+            function <span class="apidocSignatureSpan">blynk-library.</span>BoardMRAA
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.blynk-library.BoardOnOff">
+            function <span class="apidocSignatureSpan">blynk-library.</span>BoardOnOff
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.blynk-library.SslClient">
+            function <span class="apidocSignatureSpan">blynk-library.</span>SslClient
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.blynk-library.SslServer">
+            function <span class="apidocSignatureSpan">blynk-library.</span>SslServer
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.blynk-library.TcpClient">
+            function <span class="apidocSignatureSpan">blynk-library.</span>TcpClient
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.blynk-library.TcpServer">
+            function <span class="apidocSignatureSpan">blynk-library.</span>TcpServer
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">blynk-library.</span>Blynk.prototype</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">blynk-library.</span>blynk</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">blynk-library.</span>blynk_espruino</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">blynk-library.</span>blynk_node</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.blynk-library.Blynk">module blynk-library.Blynk</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.blynk-library.Blynk.Blynk">
+            function <span class="apidocSignatureSpan">blynk-library.</span>Blynk
+            <span class="apidocSignatureSpan">(auth, options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.blynk-library.Blynk.super_">
+            function <span class="apidocSignatureSpan">blynk-library.Blynk.</span>super_
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.blynk-library.Blynk.prototype">module blynk-library.Blynk.prototype</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.blynk-library.Blynk.prototype.connect">
+            function <span class="apidocSignatureSpan">blynk-library.Blynk.prototype.</span>connect
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.blynk-library.Blynk.prototype.disconnect">
+            function <span class="apidocSignatureSpan">blynk-library.Blynk.prototype.</span>disconnect
+            <span class="apidocSignatureSpan">(reconnect)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.blynk-library.Blynk.prototype.email">
+            function <span class="apidocSignatureSpan">blynk-library.Blynk.prototype.</span>email
+            <span class="apidocSignatureSpan">(to, topic, message)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.blynk-library.Blynk.prototype.end">
+            function <span class="apidocSignatureSpan">blynk-library.Blynk.prototype.</span>end
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.blynk-library.Blynk.prototype.error">
+            function <span class="apidocSignatureSpan">blynk-library.Blynk.prototype.</span>error
+            <span class="apidocSignatureSpan">(err)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.blynk-library.Blynk.prototype.notify">
+            function <span class="apidocSignatureSpan">blynk-library.Blynk.prototype.</span>notify
+            <span class="apidocSignatureSpan">(message)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.blynk-library.Blynk.prototype.onReceive">
+            function <span class="apidocSignatureSpan">blynk-library.Blynk.prototype.</span>onReceive
+            <span class="apidocSignatureSpan">(data)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.blynk-library.Blynk.prototype.sendMsg">
+            function <span class="apidocSignatureSpan">blynk-library.Blynk.prototype.</span>sendMsg
+            <span class="apidocSignatureSpan">(msg_type, values, msg_id)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.blynk-library.Blynk.prototype.sendRsp">
+            function <span class="apidocSignatureSpan">blynk-library.Blynk.prototype.</span>sendRsp
+            <span class="apidocSignatureSpan">(msg_type, msg_id, msg_len, data)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.blynk-library.Blynk.prototype.setProperty">
+            function <span class="apidocSignatureSpan">blynk-library.Blynk.prototype.</span>setProperty
+            <span class="apidocSignatureSpan">(pin, prop, val)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.blynk-library.Blynk.prototype.sms">
+            function <span class="apidocSignatureSpan">blynk-library.Blynk.prototype.</span>sms
+            <span class="apidocSignatureSpan">(message)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.blynk-library.Blynk.prototype.syncAll">
+            function <span class="apidocSignatureSpan">blynk-library.Blynk.prototype.</span>syncAll
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.blynk-library.Blynk.prototype.syncVirtual">
+            function <span class="apidocSignatureSpan">blynk-library.Blynk.prototype.</span>syncVirtual
+            <span class="apidocSignatureSpan">(pin)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.blynk-library.Blynk.prototype.tweet">
+            function <span class="apidocSignatureSpan">blynk-library.Blynk.prototype.</span>tweet
+            <span class="apidocSignatureSpan">(message)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.blynk-library.Blynk.prototype.virtualWrite">
+            function <span class="apidocSignatureSpan">blynk-library.Blynk.prototype.</span>virtualWrite
+            <span class="apidocSignatureSpan">(pin, val)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.blynk-library.SslClient">module blynk-library.SslClient</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.blynk-library.SslClient.SslClient">
+            function <span class="apidocSignatureSpan">blynk-library.</span>SslClient
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.blynk-library.SslClient.super_">
+            function <span class="apidocSignatureSpan">blynk-library.SslClient.</span>super_
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.blynk-library.SslServer">module blynk-library.SslServer</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.blynk-library.SslServer.SslServer">
+            function <span class="apidocSignatureSpan">blynk-library.</span>SslServer
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.blynk-library.SslServer.super_">
+            function <span class="apidocSignatureSpan">blynk-library.SslServer.</span>super_
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.blynk-library.TcpClient">module blynk-library.TcpClient</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.blynk-library.TcpClient.TcpClient">
+            function <span class="apidocSignatureSpan">blynk-library.</span>TcpClient
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.blynk-library.TcpClient.super_">
+            function <span class="apidocSignatureSpan">blynk-library.TcpClient.</span>super_
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.blynk-library.TcpServer">module blynk-library.TcpServer</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.blynk-library.TcpServer.TcpServer">
+            function <span class="apidocSignatureSpan">blynk-library.</span>TcpServer
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.blynk-library.TcpServer.super_">
+            function <span class="apidocSignatureSpan">blynk-library.TcpServer.</span>super_
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.blynk-library.blynk">module blynk-library.blynk</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.blynk-library.blynk.Blynk">
+            function <span class="apidocSignatureSpan">blynk-library.blynk.</span>Blynk
+            <span class="apidocSignatureSpan">(auth, options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.blynk-library.blynk.BoardMRAA">
+            function <span class="apidocSignatureSpan">blynk-library.blynk.</span>BoardMRAA
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.blynk-library.blynk.BoardOnOff">
+            function <span class="apidocSignatureSpan">blynk-library.blynk.</span>BoardOnOff
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.blynk-library.blynk.SslClient">
+            function <span class="apidocSignatureSpan">blynk-library.blynk.</span>SslClient
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.blynk-library.blynk.SslServer">
+            function <span class="apidocSignatureSpan">blynk-library.blynk.</span>SslServer
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.blynk-library.blynk.TcpClient">
+            function <span class="apidocSignatureSpan">blynk-library.blynk.</span>TcpClient
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.blynk-library.blynk.TcpServer">
+            function <span class="apidocSignatureSpan">blynk-library.blynk.</span>TcpServer
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.blynk-library.blynk_espruino">module blynk-library.blynk_espruino</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.blynk-library.blynk_espruino.Blynk">
+            function <span class="apidocSignatureSpan">blynk-library.blynk_espruino.</span>Blynk
+            <span class="apidocSignatureSpan">(auth, options)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.blynk-library.blynk_node">module blynk-library.blynk_node</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.blynk-library.blynk_node.BoardMRAA">
+            function <span class="apidocSignatureSpan">blynk-library.blynk_node.</span>BoardMRAA
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.blynk-library.blynk_node.BoardOnOff">
+            function <span class="apidocSignatureSpan">blynk-library.blynk_node.</span>BoardOnOff
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.blynk-library.blynk_node.SslClient">
+            function <span class="apidocSignatureSpan">blynk-library.blynk_node.</span>SslClient
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.blynk-library.blynk_node.SslServer">
+            function <span class="apidocSignatureSpan">blynk-library.blynk_node.</span>SslServer
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.blynk-library.blynk_node.TcpClient">
+            function <span class="apidocSignatureSpan">blynk-library.blynk_node.</span>TcpClient
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.blynk-library.blynk_node.TcpServer">
+            function <span class="apidocSignatureSpan">blynk-library.blynk_node.</span>TcpServer
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+</ol></div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.blynk-library" id="apidoc.module.blynk-library">module blynk-library</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.blynk-library.Blynk" id="apidoc.element.blynk-library.Blynk">
+        function <span class="apidocSignatureSpan">blynk-library.</span>Blynk
+        <span class="apidocSignatureSpan">(auth, options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">Blynk = function (auth, options) {
+  var self = this;
+  if (needsEmitter()) {
+    events.EventEmitter.call(this);
+  }
+
+  this.auth = auth;
+  var options = options || {};
+  this.heartbeat = options.heartbeat || (10*1000);
+
+  // Auto-detect board
+  if (options.board) {
+    this.board = options.board;
+  } else if (isEspruino()) {
+    this.board = new BoardEspruinoPico();
+  } else if (isBrowser()) {
+    this.board = new BoardDummy();
+  } else {
+    [
+        bl_node.BoardMRAA,
+        bl_node.BoardOnOff,
+        BoardDummy
+    ].some(function(b){
+      try {
+        self.board = new b();
+        return true;
+      }
+      catch (e) {
+        return false;
+      }
+    });
+  }
+  self.board.init(self);
+
+  // Auto-detect connector
+  if (options.connector) {
+    this.conn = options.connector;
+  } else if (isEspruino()) {
+    this.conn = new EspruinoTCP(options);
+  } else if (isBrowser()) {
+    this.conn = new bl_browser.WsClient(options);
+  } else {
+    this.conn = new bl_node.SslClient(options);
+  }
+
+  this.buff_in = &#x27;&#x27;;
+  this.msg_id = 1;
+  this.vpins = [];
+  this.profile = options.profile;
+
+  this.VirtualPin = function(vPin) {
+    if (needsEmitter()) {
+      events.EventEmitter.call(this);
+    }
+    this.pin = vPin;
+    self.vpins[vPin] = this;
+
+    this.write = function(value) {
+      self.virtualWrite(this.pin, value);
+    };
+  };
+
+  this.WidgetBridge = function(vPin) {
+    this.pin = vPin;
+
+    this.setAuthToken = function(token) {
+      self.sendMsg(MsgType.BRIDGE, [this.pin, &#x27;i&#x27;, token]);
+    };
+    this.digitalWrite = function(pin, val) {
+      self.sendMsg(MsgType.BRIDGE, [this.pin, &#x27;dw&#x27;, pin, val]);
+    };
+    this.analogWrite = function(pin, val) {
+      self.sendMsg(MsgType.BRIDGE, [this.pin, &#x27;aw&#x27;, pin, val]);
+    };
+    this.virtualWrite = function(pin, val) {
+      self.sendMsg(MsgType.BRIDGE, [this.pin, &#x27;vw&#x27;, pin].concat(val));
+    };
+  };
+
+  this.WidgetTerminal = function(vPin) {
+    if (needsEmitter()) {
+      events.EventEmitter.call(this);
+    }
+    this.pin = vPin;
+    self.vpins[vPin] = this;
+
+    this.write = function(data) {
+      self.virtualWrite(this.pin, data);
+    };
+  };
+
+  this.WidgetLCD = function(vPin) {
+    this.pin = vPin;
+
+    this.clear = function() {
+      self.virtualWrite(this.pin, &#x27;clr&#x27;);
+    };
+    this.print = function(x, y, val) {
+      self.sendMsg(MsgType.HW, [&#x27;vw&#x27;, this.pin, &#x27;p&#x27;, x, y, val]);
+    };
+  };
+
+  this.WidgetLED = function(vPin) {
+    this.pin = vPin;
+
+    this.setValue = function(val) {
+      self.virtualWrite(this.pin, val);
+    };
+    this.turnOn = function() {
+      self.virtualWrite(this.pin, 255);
+    };
+    this.turnOff = function() {
+      self.virtualWrite(this.pin, 0);
+    };
+  };
+
+  if (needsEmitter()) {
+    util.inherits(this.VirtualPin, events.EventEmitter);
+    util.inherits(this.WidgetBridge, events.EventEmitter);
+    util.inherits(this.WidgetTerminal, events.EventEmitter);
+  }
+
+  if (!options.skip_connect) {
+    this.connect();
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+* [Blynk + JavaScript in 20 minutes (Raspberry Pi, Edison, Espruino...)](http://www.instructables.com/id/Blynk-JavaScript-in-20-
+minutes-Raspberry-Pi-Edison/)
+* [Raspberry Pi + DHT11/DHT22/AM2302](http://www.instructables.com/id/Raspberry-Pi-Nodejs-Blynk-App-DHT11DHT22AM2302/)
+
+## Usage example:
+```js
+var BlynkLib = require(&#x27;blynk-library&#x27;);
+
+var blynk = new BlynkLib.<span class="apidocCodeKeywordSpan">Blynk</span>(&#x27;715f8caae9bf4a91bae319d0376caa8d&#x27;);
+var v1 = new blynk.VirtualPin(1);
+var v9 = new blynk.VirtualPin(9);
+
+v1.on(&#x27;write&#x27;, function(param) {
+  console.log(&#x27;V1:&#x27;, param);
+});
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.blynk-library.BoardMRAA" id="apidoc.element.blynk-library.BoardMRAA">
+        function <span class="apidocSignatureSpan">blynk-library.</span>BoardMRAA
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">BoardMRAA = function () {
+  var self = this;
+  var mraa = require(&#x27;mraa&#x27;);
+  console.log(&#x27;MRAA Version: &#x27; + mraa.getVersion());
+  this.init = function(blynk) {
+    self.blynk = blynk;
+  };
+  this.process = function(values) {
+    switch(values[0]) {
+      case &#x27;pm&#x27;:
+        break;
+      case &#x27;dw&#x27;: {
+        var pin = new mraa.Gpio(parseInt(values[1]));
+        pin.dir(mraa.DIR_OUT);
+        pin.write(parseInt(values[2]));
+      } break;
+      case &#x27;aw&#x27;: {
+        var pwm = new mraa.Pwm(parseInt(values[1]));
+        pwm.enable(true);
+        pwm.period_us(700);
+        pwm.write(scale(parseFloat(values[2]), 0, 255, 0, 1));
+      } break;
+      case &#x27;dr&#x27;: {
+        var pin = new mraa.Gpio(parseInt(values[1]));
+        pin.dir(mraa.DIR_IN);
+        self.blynk.sendMsg(MsgType.HW, null, [&#x27;dw&#x27;, values[1], pin.read()]);
+      } break;
+      case &#x27;ar&#x27;: {
+        var pin = new mraa.Aio(parseInt(values[1])-14); // TODO
+        self.blynk.sendMsg(MsgType.HW, null, [&#x27;aw&#x27;, values[1], pin.read()]);
+      } break;
+      default:
+        return false;
+    }
+    return true;
+  };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.blynk-library.BoardOnOff" id="apidoc.element.blynk-library.BoardOnOff">
+        function <span class="apidocSignatureSpan">blynk-library.</span>BoardOnOff
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">BoardOnOff = function () {
+  var self = this;
+  var Gpio;
+  try {
+    Gpio = require(&#x27;onoff&#x27;).Gpio;
+    console.log(&#x22;OnOff mode&#x22;);
+  } catch (e) {
+    // Workaround for Omega
+    Gpio = require(&#x27;/usr/bin/onoff-node/onoff&#x27;).Gpio;
+    console.log(&#x22;OnOff-Omega mode&#x22;);
+  }
+
+  this.init = function(blynk) {
+    self.blynk = blynk;
+  };
+  this.process = function(values) {
+    switch(values[0]) {
+      case &#x27;pm&#x27;:
+        break;
+      case &#x27;dw&#x27;:
+        var pin = new Gpio(parseInt(values[1]), &#x27;out&#x27;);
+        pin.write(parseInt(values[2]));
+        break;
+      case &#x27;dr&#x27;:
+        var pin = new Gpio(values[1], &#x27;in&#x27;);
+        pin.read(function(err, value) {
+          if (!err) {
+            self.blynk.sendMsg(MsgType.HW, null, [&#x27;dw&#x27;, values[1], value]);
+          }
+        });
+        break;
+      case &#x27;ar&#x27;:
+      case &#x27;aw&#x27;:
+        break;
+      default:
+        return false;
+    }
+    return true;
+  };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.blynk-library.SslClient" id="apidoc.element.blynk-library.SslClient">
+        function <span class="apidocSignatureSpan">blynk-library.</span>SslClient
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">SslClient = function (options) {
+  var self = this;
+  events.EventEmitter.call(this);
+
+  var options = options || {};
+  var certs_path = options.certs_path || default_certs_path;
+  self.addr = options.addr || &#x22;blynk-cloud.com&#x22;;
+  self.port = options.port || 8441;
+  // These are necessary only if using the client certificate authentication
+  self.key  = options.key  || null;
+  self.cert = options.cert || null;
+  self.pass = options.pass || null;
+  // This is necessary only if the server uses the self-signed certificate
+  self.ca   = options.ca   || [ path.join(certs_path, &#x27;server.crt&#x27;) ];
+  self.servername = options.servername || self.addr;
+
+  var net = require(&#x27;net&#x27;);
+  var tls = require(&#x27;tls&#x27;);
+  var fs = require(&#x27;fs&#x27;);
+
+  this.write = function(data) {
+    if (self.sock) {
+      self.sock.write(data, &#x27;binary&#x27;);
+    }
+  };
+
+  this.connect = function(done) {
+    if (self.sock) {
+      self.disconnect();
+    }
+
+    var opts = {
+      host: self.addr,
+      port: self.port,
+      servername: self.servername,
+      rejectUnauthorized: false,
+      family: 4
+    };
+    if (self.key) {
+      if (Buffer.isBuffer(self.key)) {
+        opts.key = self.key;
+      } else {
+        opts.key = fs.readFileSync(self.key);
+      }
+    }
+    if (self.cert) {
+      if (Buffer.isBuffer(self.cert)) {
+        opts.cert = self.cert;
+      } else {
+        opts.cert = fs.readFileSync(self.cert);
+      }
+    }
+    if (self.pass) { opts.passphrase = self.pass; }
+    if (self.ca)   {
+      if (Buffer.isBuffer(options.ca)) {
+        opts.ca = options.ca;
+      } else {
+        opts.ca = self.ca.map(function(item){
+          return fs.readFileSync(item);
+        });
+      }
+    }
+
+    console.log(&#x22;Connecting to:&#x22;, self.addr, self.port);
+    var sock = new net.Socket();
+    sock.on(&#x27;error&#x27;, function(e) {
+      console.log(e)
+    });
+    sock.connect({
+      host: self.addr,
+      family: 4,
+      port: self.port
+    }, function() {
+      console.log(&#x22;SSL authorization...&#x22;);
+      opts.socket = sock;
+      self.sock = tls.connect(opts, function() {
+        if (!self.sock.authorized) {
+          console.log(&#x27;SSL not authorized&#x27;);
+          return;
+        }
+        console.log(&#x27;Connected&#x27;);
+        self.sock.setNoDelay(true);
+        self.sock.setEncoding(&#x27;binary&#x27;);
+        self.sock.on(&#x27;data&#x27;, function(data) {
+          self.emit(&#x27;data&#x27;, data);
+        });
+        self.sock.on(&#x27;end&#x27;, function(data) {
+          self.emit(&#x27;end&#x27;, data);
+        });
+
+        done();
+      });
+
+      self.sock.on(&#x27;error&#x27;, function(err) {
+          //console.log(&#x27;error&#x27;, err.code);
+          self.emit(&#x27;error&#x27;, err);
+      });
+    });
+  };
+
+  this.disconnect = function() {
+    if (self.sock) {
+      self.sock.destroy();
+      self.sock.removeAllListeners();
+      self.sock = null;
+
+    }
+  };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+if (options.connector) {
+  this.conn = options.connector;
+} else if (isEspruino()) {
+  this.conn = new EspruinoTCP(options);
+} else if (isBrowser()) {
+  this.conn = new bl_browser.WsClient(options);
+} else {
+  this.conn = new bl_node.<span class="apidocCodeKeywordSpan">SslClient</span>(options);
+}
+
+this.buff_in = &#x27;&#x27;;
+this.msg_id = 1;
+this.vpins = [];
+this.profile = options.profile;
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.blynk-library.SslServer" id="apidoc.element.blynk-library.SslServer">
+        function <span class="apidocSignatureSpan">blynk-library.</span>SslServer
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">SslServer = function (options) {
+  var self = this;
+  events.EventEmitter.call(this);
+
+  var options = options || {};
+  var certs_path = options.certs_path || default_certs_path;
+  self.addr = options.addr || &#x22;0.0.0.0&#x22;;
+  self.port = options.port || 8443;
+  self.key  = options.key  || path.join(certs_path, &#x27;server.pem&#x27;);
+  self.cert = options.cert || path.join(certs_path, &#x27;server.crt&#x27;);
+  self.pass = options.pass || null;
+  // This is necessary only if the server uses the self-signed certificate
+  self.ca   = options.ca   || [ path.join(certs_path, &#x27;client.crt&#x27;) ];
+
+  var tls = require(&#x27;tls&#x27;);
+  var fs = require(&#x27;fs&#x27;);
+
+  this.write = function(data) {
+    if (self.sock) {
+      self.sock.write(data, &#x27;binary&#x27;);
+    }
+  };
+
+  this.connect = function(done) {
+    if (self.sock) {
+      self.disconnect();
+    }
+
+    var opts = { };
+    if (self.key)  { opts.key  = fs.readFileSync(self.key); }
+    if (self.cert) { opts.cert = fs.readFileSync(self.cert); }
+    if (self.pass) { opts.passphrase = self.pass; }
+    if (self.ca)   { opts.ca   = self.ca.map(fs.readFileSync); }
+    if (self.ca)   { opts.requestCert = true; }
+
+    self.srvr = tls.createServer(opts, function(conn) {
+      self.sock = conn;
+      console.log(self.sock.authorized ? &#x27;Authorized&#x27; : &#x27;Unauthorized&#x27;);
+      self.sock.setNoDelay(true);
+      self.sock.setEncoding(&#x27;binary&#x27;);
+      self.sock.on(&#x27;data&#x27;, function(data) {
+        self.emit(&#x27;data&#x27;, data);
+      });
+      self.sock.on(&#x27;end&#x27;, function() {
+        self.emit(&#x27;end&#x27;);
+      });
+      done();
+    });
+
+    console.log(&#x22;SSL server:&#x22;, self.addr, self.port);
+    self.srvr.listen(self.port, self.addr);
+  };
+
+  this.disconnect = function() {
+    if (self.sock) {
+      self.sock.destroy();
+      self.sock = null;
+    }
+  };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.blynk-library.TcpClient" id="apidoc.element.blynk-library.TcpClient">
+        function <span class="apidocSignatureSpan">blynk-library.</span>TcpClient
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">TcpClient = function (options) {
+  var self = this;
+  events.EventEmitter.call(this);
+
+  var options = options || {};
+  self.addr = options.addr || &#x22;blynk-cloud.com&#x22;;
+  self.port = options.port || 8442;
+
+  var net = require(&#x27;net&#x27;);
+
+  this.write = function(data) {
+    if (self.sock) {
+      self.sock.write(data, &#x27;binary&#x27;);
+    }
+  };
+
+  this.connect = function(done) {
+    if (self.sock) {
+      self.disconnect();
+    }
+    console.log(&#x22;Connecting to TCP:&#x22;, self.addr, self.port);
+    self.sock = new net.Socket();
+    self.sock.setNoDelay(true);
+    self.sock.setEncoding(&#x27;binary&#x27;);
+    self.sock.connect({
+      host: self.addr,
+      family: 4,
+      port: self.port
+    }, function() {
+      console.log(&#x27;Connected&#x27;);
+      self.sock.on(&#x27;data&#x27;, function(data) {
+        self.emit(&#x27;data&#x27;, data);
+      });
+      self.sock.on(&#x27;end&#x27;, function(data) {
+        self.emit(&#x27;end&#x27;, data);
+      });
+      done();
+    });
+    self.sock.on(&#x27;error&#x27;, function(err) {
+    	//console.log(&#x27;error&#x27;, err.code);
+        self.emit(&#x27;error&#x27;, err);
+    });
+
+  };
+
+  this.disconnect = function() {
+    if (self.sock) {
+      self.sock.destroy();
+      self.sock.removeAllListeners();
+      self.sock = null;
+    }
+  };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.blynk-library.TcpServer" id="apidoc.element.blynk-library.TcpServer">
+        function <span class="apidocSignatureSpan">blynk-library.</span>TcpServer
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">TcpServer = function (options) {
+  var self = this;
+  events.EventEmitter.call(this);
+
+  var options = options || {};
+  self.addr = options.addr || &#x27;0.0.0.0&#x27;;
+  self.port = options.port || 8442;
+
+  var net = require(&#x27;net&#x27;);
+
+  this.write = function(data) {
+    if (self.sock) {
+      self.sock.write(data, &#x27;binary&#x27;);
+    }
+  };
+
+  this.connect = function(done) {
+    if (self.sock) {
+      self.disconnect();
+    }
+
+    self.srvr = net.createServer(function(conn) {
+      self.sock = conn;
+      console.log(&#x27;Connected&#x27;);
+      self.sock.setNoDelay(true);
+      self.sock.setEncoding(&#x27;binary&#x27;);
+      self.sock.on(&#x27;data&#x27;, function(data) {
+        self.emit(&#x27;data&#x27;, data);
+      });
+      self.sock.on(&#x27;end&#x27;, function() {
+        self.emit(&#x27;end&#x27;);
+      });
+      done();
+    });
+
+    console.log(&#x22;TCP server:&#x22;, self.addr, self.port);
+    self.srvr.listen(self.port, self.addr);
+  };
+
+  this.disconnect = function() {
+    if (self.sock) {
+      self.sock.destroy();
+      self.sock = null;
+    }
+  };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+
+
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.blynk-library.Blynk" id="apidoc.module.blynk-library.Blynk">module blynk-library.Blynk</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.blynk-library.Blynk.Blynk" id="apidoc.element.blynk-library.Blynk.Blynk">
+        function <span class="apidocSignatureSpan">blynk-library.</span>Blynk
+        <span class="apidocSignatureSpan">(auth, options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">Blynk = function (auth, options) {
+  var self = this;
+  if (needsEmitter()) {
+    events.EventEmitter.call(this);
+  }
+
+  this.auth = auth;
+  var options = options || {};
+  this.heartbeat = options.heartbeat || (10*1000);
+
+  // Auto-detect board
+  if (options.board) {
+    this.board = options.board;
+  } else if (isEspruino()) {
+    this.board = new BoardEspruinoPico();
+  } else if (isBrowser()) {
+    this.board = new BoardDummy();
+  } else {
+    [
+        bl_node.BoardMRAA,
+        bl_node.BoardOnOff,
+        BoardDummy
+    ].some(function(b){
+      try {
+        self.board = new b();
+        return true;
+      }
+      catch (e) {
+        return false;
+      }
+    });
+  }
+  self.board.init(self);
+
+  // Auto-detect connector
+  if (options.connector) {
+    this.conn = options.connector;
+  } else if (isEspruino()) {
+    this.conn = new EspruinoTCP(options);
+  } else if (isBrowser()) {
+    this.conn = new bl_browser.WsClient(options);
+  } else {
+    this.conn = new bl_node.SslClient(options);
+  }
+
+  this.buff_in = &#x27;&#x27;;
+  this.msg_id = 1;
+  this.vpins = [];
+  this.profile = options.profile;
+
+  this.VirtualPin = function(vPin) {
+    if (needsEmitter()) {
+      events.EventEmitter.call(this);
+    }
+    this.pin = vPin;
+    self.vpins[vPin] = this;
+
+    this.write = function(value) {
+      self.virtualWrite(this.pin, value);
+    };
+  };
+
+  this.WidgetBridge = function(vPin) {
+    this.pin = vPin;
+
+    this.setAuthToken = function(token) {
+      self.sendMsg(MsgType.BRIDGE, [this.pin, &#x27;i&#x27;, token]);
+    };
+    this.digitalWrite = function(pin, val) {
+      self.sendMsg(MsgType.BRIDGE, [this.pin, &#x27;dw&#x27;, pin, val]);
+    };
+    this.analogWrite = function(pin, val) {
+      self.sendMsg(MsgType.BRIDGE, [this.pin, &#x27;aw&#x27;, pin, val]);
+    };
+    this.virtualWrite = function(pin, val) {
+      self.sendMsg(MsgType.BRIDGE, [this.pin, &#x27;vw&#x27;, pin].concat(val));
+    };
+  };
+
+  this.WidgetTerminal = function(vPin) {
+    if (needsEmitter()) {
+      events.EventEmitter.call(this);
+    }
+    this.pin = vPin;
+    self.vpins[vPin] = this;
+
+    this.write = function(data) {
+      self.virtualWrite(this.pin, data);
+    };
+  };
+
+  this.WidgetLCD = function(vPin) {
+    this.pin = vPin;
+
+    this.clear = function() {
+      self.virtualWrite(this.pin, &#x27;clr&#x27;);
+    };
+    this.print = function(x, y, val) {
+      self.sendMsg(MsgType.HW, [&#x27;vw&#x27;, this.pin, &#x27;p&#x27;, x, y, val]);
+    };
+  };
+
+  this.WidgetLED = function(vPin) {
+    this.pin = vPin;
+
+    this.setValue = function(val) {
+      self.virtualWrite(this.pin, val);
+    };
+    this.turnOn = function() {
+      self.virtualWrite(this.pin, 255);
+    };
+    this.turnOff = function() {
+      self.virtualWrite(this.pin, 0);
+    };
+  };
+
+  if (needsEmitter()) {
+    util.inherits(this.VirtualPin, events.EventEmitter);
+    util.inherits(this.WidgetBridge, events.EventEmitter);
+    util.inherits(this.WidgetTerminal, events.EventEmitter);
+  }
+
+  if (!options.skip_connect) {
+    this.connect();
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+* [Blynk + JavaScript in 20 minutes (Raspberry Pi, Edison, Espruino...)](http://www.instructables.com/id/Blynk-JavaScript-in-20-
+minutes-Raspberry-Pi-Edison/)
+* [Raspberry Pi + DHT11/DHT22/AM2302](http://www.instructables.com/id/Raspberry-Pi-Nodejs-Blynk-App-DHT11DHT22AM2302/)
+
+## Usage example:
+```js
+var BlynkLib = require(&#x27;blynk-library&#x27;);
+
+var blynk = new BlynkLib.<span class="apidocCodeKeywordSpan">Blynk</span>(&#x27;715f8caae9bf4a91bae319d0376caa8d&#x27;);
+var v1 = new blynk.VirtualPin(1);
+var v9 = new blynk.VirtualPin(9);
+
+v1.on(&#x27;write&#x27;, function(param) {
+  console.log(&#x27;V1:&#x27;, param);
+});
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.blynk-library.Blynk.super_" id="apidoc.element.blynk-library.Blynk.super_">
+        function <span class="apidocSignatureSpan">blynk-library.Blynk.</span>super_
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function EventEmitter() {
+  EventEmitter.init.call(this);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.blynk-library.Blynk.prototype" id="apidoc.module.blynk-library.Blynk.prototype">module blynk-library.Blynk.prototype</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.blynk-library.Blynk.prototype.connect" id="apidoc.element.blynk-library.Blynk.prototype.connect">
+        function <span class="apidocSignatureSpan">blynk-library.Blynk.prototype.</span>connect
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">connect = function () {
+  var self = this;
+
+  var doConnect = function() {
+    if(self.conn) {
+      //cleanup events
+      self.conn.removeAllListeners();
+    }
+    self.conn.connect(function() {
+      self.conn.on(&#x27;data&#x27;, function(data) { self.onReceive(data);     });
+      self.conn.on(&#x27;end&#x27;,  function()     { self.end();               });
+
+      self.sendRsp(MsgType.LOGIN, 1, self.auth.length, self.auth);
+    });
+    self.conn.on(&#x27;error&#x27;, function(err) { self.error(err);            });
+  };
+
+  if (self.profile) {
+    doConnect();
+  } else {
+    self.timerConn = setInterval(doConnect, 10000);
+    doConnect();
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+};
+
+this.connect = function(done) {
+  if (self.sock) {
+    self.disconnect();
+  }
+  console.log(&#x22;Connecting to TCP:&#x22;, self.addr, self.port);
+  self.sock = net.<span class="apidocCodeKeywordSpan">connect</span>({host : self.addr, port: self.port}, function() {
+    console.log(&#x27;Connected&#x27;);
+    self.sock.on(&#x27;data&#x27;, function(data) {
+      self.emit(&#x27;data&#x27;, data);
+    });
+    self.sock.on(&#x27;end&#x27;, function() {
+      self.emit(&#x27;end&#x27;, &#x27;&#x27;);
+    });
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.blynk-library.Blynk.prototype.disconnect" id="apidoc.element.blynk-library.Blynk.prototype.disconnect">
+        function <span class="apidocSignatureSpan">blynk-library.Blynk.prototype.</span>disconnect
+        <span class="apidocSignatureSpan">(reconnect)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">disconnect = function (reconnect) {
+  console.log(&#x27;Disconnect blynk&#x27;);
+  if(typeof reconnect === &#x27;undefined&#x27; ) {
+    reconnect = true;
+  }
+
+  var self = this;
+  this.conn.disconnect();
+  if (this.timerHb) {
+    clearInterval(this.timerHb);
+    this.timerHb = null;
+  }
+  this.emit(&#x27;disconnect&#x27;);
+  //cleanup to avoid multiplying listeners
+  this.conn.removeAllListeners();
+
+  //starting reconnect procedure if not already in connecting loop and reconnect is true
+  if(reconnect &#x26;&#x26; !self.timerConn) {
+    console.log(&#x22;REARMING DISCONNECT&#x22;);
+    setTimeout(function () {self.connect()}, 5000);
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  if (self.sock) {
+    self.sock.write(data, &#x27;binary&#x27;);
+  }
+};
+
+this.connect = function(done) {
+  if (self.sock) {
+    self.<span class="apidocCodeKeywordSpan">disconnect</span>();
+  }
+  console.log(&#x22;Connecting to TCP:&#x22;, self.addr, self.port);
+  self.sock = net.connect({host : self.addr, port: self.port}, function() {
+    console.log(&#x27;Connected&#x27;);
+    self.sock.on(&#x27;data&#x27;, function(data) {
+      self.emit(&#x27;data&#x27;, data);
+    });
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.blynk-library.Blynk.prototype.email" id="apidoc.element.blynk-library.Blynk.prototype.email">
+        function <span class="apidocSignatureSpan">blynk-library.Blynk.prototype.</span>email
+        <span class="apidocSignatureSpan">(to, topic, message)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">email = function (to, topic, message) {
+  this.sendMsg(MsgType.EMAIL, [to, topic, message]);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.blynk-library.Blynk.prototype.end" id="apidoc.element.blynk-library.Blynk.prototype.end">
+        function <span class="apidocSignatureSpan">blynk-library.Blynk.prototype.</span>end
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">end = function () {
+  var self = this;
+  self.disconnect();
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+var doConnect = function() {
+  if(self.conn) {
+    //cleanup events
+    self.conn.removeAllListeners();
+  }
+  self.conn.connect(function() {
+    self.conn.on(&#x27;data&#x27;, function(data) { self.onReceive(data);     });
+    self.conn.on(&#x27;end&#x27;,  function()     { self.<span class="apidocCodeKeywordSpan">end</span>();               });
+
+    self.sendRsp(MsgType.LOGIN, 1, self.auth.length, self.auth);
+  });
+  self.conn.on(&#x27;error&#x27;, function(err) { self.error(err);            });
+};
+
+if (self.profile) {
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.blynk-library.Blynk.prototype.error" id="apidoc.element.blynk-library.Blynk.prototype.error">
+        function <span class="apidocSignatureSpan">blynk-library.Blynk.prototype.</span>error
+        <span class="apidocSignatureSpan">(err)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">error = function (err) {
+  var self = this;
+  //if we throw error and user doesn&#x27;t handle it, app crashes. is it worth it?
+  this.emit(&#x27;error&#x27;, err.code?err.code:&#x27;ERROR&#x27;);
+  console.error(&#x27;Error&#x27;, err.code);
+  //starting reconnect procedure if not already in connecting loop
+  if(!self.timerConn) {
+    setTimeout(function () {self.connect()}, 5000);
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  }
+  self.conn.connect(function() {
+    self.conn.on(&#x27;data&#x27;, function(data) { self.onReceive(data);     });
+    self.conn.on(&#x27;end&#x27;,  function()     { self.end();               });
+
+    self.sendRsp(MsgType.LOGIN, 1, self.auth.length, self.auth);
+  });
+  self.conn.on(&#x27;error&#x27;, function(err) { self.<span class="apidocCodeKeywordSpan">error</span>(err);            });
+};
+
+if (self.profile) {
+  doConnect();
+} else {
+  self.timerConn = setInterval(doConnect, 10000);
+  doConnect();
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.blynk-library.Blynk.prototype.notify" id="apidoc.element.blynk-library.Blynk.prototype.notify">
+        function <span class="apidocSignatureSpan">blynk-library.Blynk.prototype.</span>notify
+        <span class="apidocSignatureSpan">(message)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">notify = function (message) {
+  this.sendMsg(MsgType.NOTIFY, [message]);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.blynk-library.Blynk.prototype.onReceive" id="apidoc.element.blynk-library.Blynk.prototype.onReceive">
+        function <span class="apidocSignatureSpan">blynk-library.Blynk.prototype.</span>onReceive
+        <span class="apidocSignatureSpan">(data)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">onReceive = function (data) {
+  var self = this;
+  self.buff_in += data;
+  while (self.buff_in.length &#x3e;= 5) {
+    var msg_type = self.buff_in.charCodeAt(0);
+    var msg_id   = self.buff_in.charCodeAt(1) &#x3c;&#x3c; 8 | self.buff_in.charCodeAt(2);
+    var msg_len  = self.buff_in.charCodeAt(3) &#x3c;&#x3c; 8 | self.buff_in.charCodeAt(4);
+
+    if (msg_id === 0)  { return self.disconnect(); }
+
+    if (msg_type === MsgType.RSP) {
+      //console.log(&#x27;&#x3e; &#x27;, string_of_enum(MsgType, msg_type), msg_id, string_of_enum(MsgStatus, msg_len));
+      if (!self.profile) {
+        if (self.timerConn &#x26;&#x26; msg_id === 1) {
+          if (msg_len === MsgStatus.OK || msg_len === MsgStatus.ALREADY_REGISTERED) {
+            clearInterval(self.timerConn);
+            self.timerConn = null;
+            self.timerHb = setInterval(function() {
+              //console.log(&#x27;Heartbeat&#x27;);
+              self.sendMsg(MsgType.PING);
+            }, self.heartbeat);
+            console.log(&#x27;Authorized&#x27;);
+            self.sendMsg(MsgType.INTERNAL, [&#x27;ver&#x27;, &#x27;0.4.7&#x27;, &#x27;dev&#x27;, &#x27;js&#x27;]);
+            self.emit(&#x27;connect&#x27;);
+          } else {
+            console.log(&#x27;Could not login:&#x27;, string_of_enum(MsgStatus, msg_len));
+            //if invalid token, no point in trying to reconnect
+            if (msg_len === MsgStatus.INVALID_TOKEN) {
+              //letting main app know why we failed
+              self.emit(&#x27;error&#x27;, string_of_enum(MsgStatus, msg_len));
+              //console.log(&#x27;Disconnecting because of invalid token&#x27;);
+              self.disconnect();
+              if(self.timerConn) {
+                //clear connecting timer
+                console.log(&#x27;clear conn timer&#x27;);
+                clearInterval(self.timerConn);
+                self.timerConn = null;
+              }
+            }
+          }
+        }
+      }
+      self.buff_in = self.buff_in.substr(5);
+      continue;
+    }
+
+    if (msg_len &#x3e; 1024)  { return self.disconnect(); }
+    if (self.buff_in.length &#x3c; msg_len+5) {
+      return;
+    }
+    var values = self.buff_in.substr(5, msg_len).split(&#x27;\0&#x27;);
+    self.buff_in = self.buff_in.substr(msg_len+5);
+
+<span class="apidocCodeCommentSpan">    /*if (msg_len) {
+      console.log(&#x27;&#x3e; &#x27;, string_of_enum(MsgType, msg_type), msg_id, msg_len, values.join(&#x27;|&#x27;));
+    } else {
+      console.log(&#x27;&#x3e; &#x27;, string_of_enum(MsgType, msg_type), msg_id, msg_len);
+    }*/
+</span>
+    if (msg_type === MsgType.LOGIN ||
+        msg_type === MsgType.PING)
+    {
+      self.sendRsp(MsgType.RSP, msg_id, MsgStatus.OK);
+    } else if (msg_type === MsgType.GET_TOKEN) {
+      self.sendRsp(MsgType.GET_TOKEN, msg_id, self.auth.length, self.auth);
+    } else if (msg_type === MsgType.LOAD_PROF) {
+      self.sendRsp(MsgType.LOAD_PROF, msg_id, self.profile.length, self.profile);
+    } else if (msg_type === MsgType.HW ||
+               msg_type === MsgType.BRIDGE)
+    {
+      if (values[0] === &#x27;vw&#x27;) {
+        var pin = parseInt(values[1]);
+        if (self.vpins[pin]) {
+          self.vpins[pin].emit(&#x27;write&#x27;, values.slice(2));
+        }
+      } else if (values[0] === &#x27;vr&#x27;) {
+        var pin = parseInt(values[1]);
+        if (self.vpins[pin]) {
+          self.vpins[pin].emit(&#x27;read&#x27;);
+        }
+      } else if (self.board.process(values)) {
+
+      } else {
+        console.log(&#x27;Invalid cmd: &#x27;, values[0]);
+        //self.sendRsp(MsgType.RSP, msg_id, MsgStatus.ILLEGAL_COMMAND);
+      }
+    } else if (msg_type === MsgType.REDIRECT) {
+      self.conn.addr = values[0];
+      if (values[1]) {
+        self.conn.port = parseInt(values[1]);
+      }
+      console.log(&#x27;Redirecting to &#x27;, self.conn.addr, &#x27;:&#x27;, self.conn.port);
+      self.disconnect();
+    } else if (msg_type === MsgType.DEBUG_PRINT) {
+      console.log(&#x27;Server: &#x27;, values[0]);
+    } else if (msg_type === MsgType.REGISTER ||
+               msg_type === MsgType.SAVE_PROF ||
+               msg_type === MsgType.INTERNAL ||
+               msg_type === MsgType.ACTIVATE ||
+               msg_type === MsgType.DEACTIVATE ||
+               msg_type === MsgType.REFRESH)
+    {
+      // these make no sence...
+    } else {
+      console.log(&#x27;Invalid msg type: &#x27;, msg_type);
+      self.sendRsp(MsgType.RSP, msg_id, MsgStatus.ILLEGAL_COMMA ...</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+var doConnect = function() {
+  if(self.conn) {
+    //cleanup events
+    self.conn.removeAllListeners();
+  }
+  self.conn.connect(function() {
+    self.conn.on(&#x27;data&#x27;, function(data) { self.<span class="apidocCodeKeywordSpan">onReceive</span>(data);     });
+    self.conn.on(&#x27;end&#x27;,  function()     { self.end();               });
+
+    self.sendRsp(MsgType.LOGIN, 1, self.auth.length, self.auth);
+  });
+  self.conn.on(&#x27;error&#x27;, function(err) { self.error(err);            });
+};
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.blynk-library.Blynk.prototype.sendMsg" id="apidoc.element.blynk-library.Blynk.prototype.sendMsg">
+        function <span class="apidocSignatureSpan">blynk-library.Blynk.prototype.</span>sendMsg
+        <span class="apidocSignatureSpan">(msg_type, values, msg_id)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">sendMsg = function (msg_type, values, msg_id) {
+  var values = values || [&#x27;&#x27;];
+  var data = values.join(&#x27;\0&#x27;);
+  this.sendRsp(msg_type, msg_id, data.length, data);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  var pin = Pin(values[1]);
+  var val = parseInt(values[2]);
+  pinMode(pin, &#x27;output&#x27;);
+  digitalWrite(pin, val);
+  break;
+case &#x27;dr&#x27;:
+  var pin = Pin(values[1]);
+  self.blynk.<span class="apidocCodeKeywordSpan">sendMsg</span>(MsgType.HW, [&#x27;dw&#x27;, values[1], digitalRead(pin)]);
+  break;
+case &#x27;aw&#x27;:
+  var pin = Pin(values[1]);
+  var val = parseFloat(values[2]);
+  pinMode(pin, &#x27;output&#x27;);
+  analogWrite(pin, val / 255);
+  break;
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.blynk-library.Blynk.prototype.sendRsp" id="apidoc.element.blynk-library.Blynk.prototype.sendRsp">
+        function <span class="apidocSignatureSpan">blynk-library.Blynk.prototype.</span>sendRsp
+        <span class="apidocSignatureSpan">(msg_type, msg_id, msg_len, data)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">sendRsp = function (msg_type, msg_id, msg_len, data) {
+  var self = this;
+  data = data || &#x22;&#x22;;
+  msg_id = msg_id || (self.msg_id++);
+  if (msg_type == MsgType.RSP) {
+    //console.log(&#x27;&#x3c; &#x27;, string_of_enum(MsgType, msg_type), msg_id, string_of_enum(MsgStatus, msg_len));
+    data = blynkHeader(msg_type, msg_id, msg_len)
+  } else {
+<span class="apidocCodeCommentSpan">    /*if (msg_len) {
+      console.log(&#x27;&#x3c; &#x27;, string_of_enum(MsgType, msg_type), msg_id, msg_len, data.split(&#x27;\0&#x27;).join(&#x27;|&#x27;));
+    } else {
+      console.log(&#x27;&#x3c; &#x27;, string_of_enum(MsgType, msg_type), msg_id, msg_len);
+    }*/
+</span>    data = blynkHeader(msg_type, msg_id, msg_len) + data;
+  }
+
+  self.conn.write(data)
+
+  // TODO: track also recieving time
+  /*if (!self.profile) {
+    if (self.timerHb) {
+      clearInterval(self.timerHb);
+      self.timerHb = setInterval(function(){
+        //console.log(&#x27;Heartbeat&#x27;);
+        self.sendMsg(MsgType.PING);
+      }, self.heartbeat);
+    }
+  }*/
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+} else {
+  console.log(&#x27;&#x3e; &#x27;, string_of_enum(MsgType, msg_type), msg_id, msg_len);
+}*/
+
+if (msg_type === MsgType.LOGIN ||
+    msg_type === MsgType.PING)
+{
+  self.<span class="apidocCodeKeywordSpan">sendRsp</span>(MsgType.RSP, msg_id, MsgStatus.OK);
+} else if (msg_type === MsgType.HW ||
+           msg_type === MsgType.BRIDGE)
+{
+  if (values[0] === &#x27;vw&#x27;) {
+    var pin = parseInt(values[1]);
+    if (self.vpins[pin]) {
+      self.vpins[pin].emit(&#x27;write&#x27;, values.slice(2));
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.blynk-library.Blynk.prototype.setProperty" id="apidoc.element.blynk-library.Blynk.prototype.setProperty">
+        function <span class="apidocSignatureSpan">blynk-library.Blynk.prototype.</span>setProperty
+        <span class="apidocSignatureSpan">(pin, prop, val)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">setProperty = function (pin, prop, val) {
+  this.sendMsg(MsgType.PROPERTY, [pin, prop].concat(val));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.blynk-library.Blynk.prototype.sms" id="apidoc.element.blynk-library.Blynk.prototype.sms">
+        function <span class="apidocSignatureSpan">blynk-library.Blynk.prototype.</span>sms
+        <span class="apidocSignatureSpan">(message)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">sms = function (message) {
+  this.sendMsg(MsgType.SMS, [message]);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.blynk-library.Blynk.prototype.syncAll" id="apidoc.element.blynk-library.Blynk.prototype.syncAll">
+        function <span class="apidocSignatureSpan">blynk-library.Blynk.prototype.</span>syncAll
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">syncAll = function () {
+  this.sendMsg(MsgType.HW_SYNC);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.blynk-library.Blynk.prototype.syncVirtual" id="apidoc.element.blynk-library.Blynk.prototype.syncVirtual">
+        function <span class="apidocSignatureSpan">blynk-library.Blynk.prototype.</span>syncVirtual
+        <span class="apidocSignatureSpan">(pin)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">syncVirtual = function (pin) {
+  this.sendMsg(MsgType.HW_SYNC, [&#x27;vr&#x27;, pin]);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  args.ops.forEach(function(op) {
+    switch(op[0]) {
+    case &#x27;dw&#x27;: bridge.digitalWrite(op[1], op[2]);  break;
+    case &#x27;aw&#x27;: bridge.analogWrite (op[1], op[2]);  break;
+    case &#x27;vw&#x27;: bridge.virtualWrite(op[1], op.slice(2));  break;
+    case &#x27;dr&#x27;: blynk.syncDigital(op[1]);           break;
+    case &#x27;ar&#x27;: blynk.syncAnalog (op[1]);           break;
+    case &#x27;vr&#x27;: blynk.<span class="apidocCodeKeywordSpan">syncVirtual</span>(op[1]);           break;
+    }
+  });
+});
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.blynk-library.Blynk.prototype.tweet" id="apidoc.element.blynk-library.Blynk.prototype.tweet">
+        function <span class="apidocSignatureSpan">blynk-library.Blynk.prototype.</span>tweet
+        <span class="apidocSignatureSpan">(message)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">tweet = function (message) {
+  this.sendMsg(MsgType.TWEET, [message]);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.blynk-library.Blynk.prototype.virtualWrite" id="apidoc.element.blynk-library.Blynk.prototype.virtualWrite">
+        function <span class="apidocSignatureSpan">blynk-library.Blynk.prototype.</span>virtualWrite
+        <span class="apidocSignatureSpan">(pin, val)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">virtualWrite = function (pin, val) {
+  this.sendMsg(MsgType.HW, [&#x27;vw&#x27;, pin].concat(val));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  this.profile = options.profile;
+
+  this.VirtualPin = function(vPin) {
+this.pin = vPin;
+self.vpins[vPin] = this;
+
+this.write = function(value) {
+  self.<span class="apidocCodeKeywordSpan">virtualWrite</span>(this.pin, value);
+};
+  };
+
+  this.WidgetBridge = function(vPin) {
+this.pin = vPin;
+
+this.setAuthToken = function(token) {
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.blynk-library.SslClient" id="apidoc.module.blynk-library.SslClient">module blynk-library.SslClient</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.blynk-library.SslClient.SslClient" id="apidoc.element.blynk-library.SslClient.SslClient">
+        function <span class="apidocSignatureSpan">blynk-library.</span>SslClient
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">SslClient = function (options) {
+  var self = this;
+  events.EventEmitter.call(this);
+
+  var options = options || {};
+  var certs_path = options.certs_path || default_certs_path;
+  self.addr = options.addr || &#x22;blynk-cloud.com&#x22;;
+  self.port = options.port || 8441;
+  // These are necessary only if using the client certificate authentication
+  self.key  = options.key  || null;
+  self.cert = options.cert || null;
+  self.pass = options.pass || null;
+  // This is necessary only if the server uses the self-signed certificate
+  self.ca   = options.ca   || [ path.join(certs_path, &#x27;server.crt&#x27;) ];
+  self.servername = options.servername || self.addr;
+
+  var net = require(&#x27;net&#x27;);
+  var tls = require(&#x27;tls&#x27;);
+  var fs = require(&#x27;fs&#x27;);
+
+  this.write = function(data) {
+    if (self.sock) {
+      self.sock.write(data, &#x27;binary&#x27;);
+    }
+  };
+
+  this.connect = function(done) {
+    if (self.sock) {
+      self.disconnect();
+    }
+
+    var opts = {
+      host: self.addr,
+      port: self.port,
+      servername: self.servername,
+      rejectUnauthorized: false,
+      family: 4
+    };
+    if (self.key) {
+      if (Buffer.isBuffer(self.key)) {
+        opts.key = self.key;
+      } else {
+        opts.key = fs.readFileSync(self.key);
+      }
+    }
+    if (self.cert) {
+      if (Buffer.isBuffer(self.cert)) {
+        opts.cert = self.cert;
+      } else {
+        opts.cert = fs.readFileSync(self.cert);
+      }
+    }
+    if (self.pass) { opts.passphrase = self.pass; }
+    if (self.ca)   {
+      if (Buffer.isBuffer(options.ca)) {
+        opts.ca = options.ca;
+      } else {
+        opts.ca = self.ca.map(function(item){
+          return fs.readFileSync(item);
+        });
+      }
+    }
+
+    console.log(&#x22;Connecting to:&#x22;, self.addr, self.port);
+    var sock = new net.Socket();
+    sock.on(&#x27;error&#x27;, function(e) {
+      console.log(e)
+    });
+    sock.connect({
+      host: self.addr,
+      family: 4,
+      port: self.port
+    }, function() {
+      console.log(&#x22;SSL authorization...&#x22;);
+      opts.socket = sock;
+      self.sock = tls.connect(opts, function() {
+        if (!self.sock.authorized) {
+          console.log(&#x27;SSL not authorized&#x27;);
+          return;
+        }
+        console.log(&#x27;Connected&#x27;);
+        self.sock.setNoDelay(true);
+        self.sock.setEncoding(&#x27;binary&#x27;);
+        self.sock.on(&#x27;data&#x27;, function(data) {
+          self.emit(&#x27;data&#x27;, data);
+        });
+        self.sock.on(&#x27;end&#x27;, function(data) {
+          self.emit(&#x27;end&#x27;, data);
+        });
+
+        done();
+      });
+
+      self.sock.on(&#x27;error&#x27;, function(err) {
+          //console.log(&#x27;error&#x27;, err.code);
+          self.emit(&#x27;error&#x27;, err);
+      });
+    });
+  };
+
+  this.disconnect = function() {
+    if (self.sock) {
+      self.sock.destroy();
+      self.sock.removeAllListeners();
+      self.sock = null;
+
+    }
+  };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+if (options.connector) {
+  this.conn = options.connector;
+} else if (isEspruino()) {
+  this.conn = new EspruinoTCP(options);
+} else if (isBrowser()) {
+  this.conn = new bl_browser.WsClient(options);
+} else {
+  this.conn = new bl_node.<span class="apidocCodeKeywordSpan">SslClient</span>(options);
+}
+
+this.buff_in = &#x27;&#x27;;
+this.msg_id = 1;
+this.vpins = [];
+this.profile = options.profile;
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.blynk-library.SslClient.super_" id="apidoc.element.blynk-library.SslClient.super_">
+        function <span class="apidocSignatureSpan">blynk-library.SslClient.</span>super_
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function EventEmitter() {
+  EventEmitter.init.call(this);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.blynk-library.SslServer" id="apidoc.module.blynk-library.SslServer">module blynk-library.SslServer</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.blynk-library.SslServer.SslServer" id="apidoc.element.blynk-library.SslServer.SslServer">
+        function <span class="apidocSignatureSpan">blynk-library.</span>SslServer
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">SslServer = function (options) {
+  var self = this;
+  events.EventEmitter.call(this);
+
+  var options = options || {};
+  var certs_path = options.certs_path || default_certs_path;
+  self.addr = options.addr || &#x22;0.0.0.0&#x22;;
+  self.port = options.port || 8443;
+  self.key  = options.key  || path.join(certs_path, &#x27;server.pem&#x27;);
+  self.cert = options.cert || path.join(certs_path, &#x27;server.crt&#x27;);
+  self.pass = options.pass || null;
+  // This is necessary only if the server uses the self-signed certificate
+  self.ca   = options.ca   || [ path.join(certs_path, &#x27;client.crt&#x27;) ];
+
+  var tls = require(&#x27;tls&#x27;);
+  var fs = require(&#x27;fs&#x27;);
+
+  this.write = function(data) {
+    if (self.sock) {
+      self.sock.write(data, &#x27;binary&#x27;);
+    }
+  };
+
+  this.connect = function(done) {
+    if (self.sock) {
+      self.disconnect();
+    }
+
+    var opts = { };
+    if (self.key)  { opts.key  = fs.readFileSync(self.key); }
+    if (self.cert) { opts.cert = fs.readFileSync(self.cert); }
+    if (self.pass) { opts.passphrase = self.pass; }
+    if (self.ca)   { opts.ca   = self.ca.map(fs.readFileSync); }
+    if (self.ca)   { opts.requestCert = true; }
+
+    self.srvr = tls.createServer(opts, function(conn) {
+      self.sock = conn;
+      console.log(self.sock.authorized ? &#x27;Authorized&#x27; : &#x27;Unauthorized&#x27;);
+      self.sock.setNoDelay(true);
+      self.sock.setEncoding(&#x27;binary&#x27;);
+      self.sock.on(&#x27;data&#x27;, function(data) {
+        self.emit(&#x27;data&#x27;, data);
+      });
+      self.sock.on(&#x27;end&#x27;, function() {
+        self.emit(&#x27;end&#x27;);
+      });
+      done();
+    });
+
+    console.log(&#x22;SSL server:&#x22;, self.addr, self.port);
+    self.srvr.listen(self.port, self.addr);
+  };
+
+  this.disconnect = function() {
+    if (self.sock) {
+      self.sock.destroy();
+      self.sock = null;
+    }
+  };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.blynk-library.SslServer.super_" id="apidoc.element.blynk-library.SslServer.super_">
+        function <span class="apidocSignatureSpan">blynk-library.SslServer.</span>super_
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function EventEmitter() {
+  EventEmitter.init.call(this);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.blynk-library.TcpClient" id="apidoc.module.blynk-library.TcpClient">module blynk-library.TcpClient</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.blynk-library.TcpClient.TcpClient" id="apidoc.element.blynk-library.TcpClient.TcpClient">
+        function <span class="apidocSignatureSpan">blynk-library.</span>TcpClient
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">TcpClient = function (options) {
+  var self = this;
+  events.EventEmitter.call(this);
+
+  var options = options || {};
+  self.addr = options.addr || &#x22;blynk-cloud.com&#x22;;
+  self.port = options.port || 8442;
+
+  var net = require(&#x27;net&#x27;);
+
+  this.write = function(data) {
+    if (self.sock) {
+      self.sock.write(data, &#x27;binary&#x27;);
+    }
+  };
+
+  this.connect = function(done) {
+    if (self.sock) {
+      self.disconnect();
+    }
+    console.log(&#x22;Connecting to TCP:&#x22;, self.addr, self.port);
+    self.sock = new net.Socket();
+    self.sock.setNoDelay(true);
+    self.sock.setEncoding(&#x27;binary&#x27;);
+    self.sock.connect({
+      host: self.addr,
+      family: 4,
+      port: self.port
+    }, function() {
+      console.log(&#x27;Connected&#x27;);
+      self.sock.on(&#x27;data&#x27;, function(data) {
+        self.emit(&#x27;data&#x27;, data);
+      });
+      self.sock.on(&#x27;end&#x27;, function(data) {
+        self.emit(&#x27;end&#x27;, data);
+      });
+      done();
+    });
+    self.sock.on(&#x27;error&#x27;, function(err) {
+    	//console.log(&#x27;error&#x27;, err.code);
+        self.emit(&#x27;error&#x27;, err);
+    });
+
+  };
+
+  this.disconnect = function() {
+    if (self.sock) {
+      self.sock.destroy();
+      self.sock.removeAllListeners();
+      self.sock = null;
+    }
+  };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.blynk-library.TcpClient.super_" id="apidoc.element.blynk-library.TcpClient.super_">
+        function <span class="apidocSignatureSpan">blynk-library.TcpClient.</span>super_
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function EventEmitter() {
+  EventEmitter.init.call(this);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.blynk-library.TcpServer" id="apidoc.module.blynk-library.TcpServer">module blynk-library.TcpServer</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.blynk-library.TcpServer.TcpServer" id="apidoc.element.blynk-library.TcpServer.TcpServer">
+        function <span class="apidocSignatureSpan">blynk-library.</span>TcpServer
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">TcpServer = function (options) {
+  var self = this;
+  events.EventEmitter.call(this);
+
+  var options = options || {};
+  self.addr = options.addr || &#x27;0.0.0.0&#x27;;
+  self.port = options.port || 8442;
+
+  var net = require(&#x27;net&#x27;);
+
+  this.write = function(data) {
+    if (self.sock) {
+      self.sock.write(data, &#x27;binary&#x27;);
+    }
+  };
+
+  this.connect = function(done) {
+    if (self.sock) {
+      self.disconnect();
+    }
+
+    self.srvr = net.createServer(function(conn) {
+      self.sock = conn;
+      console.log(&#x27;Connected&#x27;);
+      self.sock.setNoDelay(true);
+      self.sock.setEncoding(&#x27;binary&#x27;);
+      self.sock.on(&#x27;data&#x27;, function(data) {
+        self.emit(&#x27;data&#x27;, data);
+      });
+      self.sock.on(&#x27;end&#x27;, function() {
+        self.emit(&#x27;end&#x27;);
+      });
+      done();
+    });
+
+    console.log(&#x22;TCP server:&#x22;, self.addr, self.port);
+    self.srvr.listen(self.port, self.addr);
+  };
+
+  this.disconnect = function() {
+    if (self.sock) {
+      self.sock.destroy();
+      self.sock = null;
+    }
+  };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.blynk-library.TcpServer.super_" id="apidoc.element.blynk-library.TcpServer.super_">
+        function <span class="apidocSignatureSpan">blynk-library.TcpServer.</span>super_
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function EventEmitter() {
+  EventEmitter.init.call(this);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.blynk-library.blynk" id="apidoc.module.blynk-library.blynk">module blynk-library.blynk</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.blynk-library.blynk.Blynk" id="apidoc.element.blynk-library.blynk.Blynk">
+        function <span class="apidocSignatureSpan">blynk-library.blynk.</span>Blynk
+        <span class="apidocSignatureSpan">(auth, options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">Blynk = function (auth, options) {
+  var self = this;
+  if (needsEmitter()) {
+    events.EventEmitter.call(this);
+  }
+
+  this.auth = auth;
+  var options = options || {};
+  this.heartbeat = options.heartbeat || (10*1000);
+
+  // Auto-detect board
+  if (options.board) {
+    this.board = options.board;
+  } else if (isEspruino()) {
+    this.board = new BoardEspruinoPico();
+  } else if (isBrowser()) {
+    this.board = new BoardDummy();
+  } else {
+    [
+        bl_node.BoardMRAA,
+        bl_node.BoardOnOff,
+        BoardDummy
+    ].some(function(b){
+      try {
+        self.board = new b();
+        return true;
+      }
+      catch (e) {
+        return false;
+      }
+    });
+  }
+  self.board.init(self);
+
+  // Auto-detect connector
+  if (options.connector) {
+    this.conn = options.connector;
+  } else if (isEspruino()) {
+    this.conn = new EspruinoTCP(options);
+  } else if (isBrowser()) {
+    this.conn = new bl_browser.WsClient(options);
+  } else {
+    this.conn = new bl_node.SslClient(options);
+  }
+
+  this.buff_in = &#x27;&#x27;;
+  this.msg_id = 1;
+  this.vpins = [];
+  this.profile = options.profile;
+
+  this.VirtualPin = function(vPin) {
+    if (needsEmitter()) {
+      events.EventEmitter.call(this);
+    }
+    this.pin = vPin;
+    self.vpins[vPin] = this;
+
+    this.write = function(value) {
+      self.virtualWrite(this.pin, value);
+    };
+  };
+
+  this.WidgetBridge = function(vPin) {
+    this.pin = vPin;
+
+    this.setAuthToken = function(token) {
+      self.sendMsg(MsgType.BRIDGE, [this.pin, &#x27;i&#x27;, token]);
+    };
+    this.digitalWrite = function(pin, val) {
+      self.sendMsg(MsgType.BRIDGE, [this.pin, &#x27;dw&#x27;, pin, val]);
+    };
+    this.analogWrite = function(pin, val) {
+      self.sendMsg(MsgType.BRIDGE, [this.pin, &#x27;aw&#x27;, pin, val]);
+    };
+    this.virtualWrite = function(pin, val) {
+      self.sendMsg(MsgType.BRIDGE, [this.pin, &#x27;vw&#x27;, pin].concat(val));
+    };
+  };
+
+  this.WidgetTerminal = function(vPin) {
+    if (needsEmitter()) {
+      events.EventEmitter.call(this);
+    }
+    this.pin = vPin;
+    self.vpins[vPin] = this;
+
+    this.write = function(data) {
+      self.virtualWrite(this.pin, data);
+    };
+  };
+
+  this.WidgetLCD = function(vPin) {
+    this.pin = vPin;
+
+    this.clear = function() {
+      self.virtualWrite(this.pin, &#x27;clr&#x27;);
+    };
+    this.print = function(x, y, val) {
+      self.sendMsg(MsgType.HW, [&#x27;vw&#x27;, this.pin, &#x27;p&#x27;, x, y, val]);
+    };
+  };
+
+  this.WidgetLED = function(vPin) {
+    this.pin = vPin;
+
+    this.setValue = function(val) {
+      self.virtualWrite(this.pin, val);
+    };
+    this.turnOn = function() {
+      self.virtualWrite(this.pin, 255);
+    };
+    this.turnOff = function() {
+      self.virtualWrite(this.pin, 0);
+    };
+  };
+
+  if (needsEmitter()) {
+    util.inherits(this.VirtualPin, events.EventEmitter);
+    util.inherits(this.WidgetBridge, events.EventEmitter);
+    util.inherits(this.WidgetTerminal, events.EventEmitter);
+  }
+
+  if (!options.skip_connect) {
+    this.connect();
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+* [Blynk + JavaScript in 20 minutes (Raspberry Pi, Edison, Espruino...)](http://www.instructables.com/id/Blynk-JavaScript-in-20-
+minutes-Raspberry-Pi-Edison/)
+* [Raspberry Pi + DHT11/DHT22/AM2302](http://www.instructables.com/id/Raspberry-Pi-Nodejs-Blynk-App-DHT11DHT22AM2302/)
+
+## Usage example:
+```js
+var BlynkLib = require(&#x27;blynk-library&#x27;);
+
+var blynk = new BlynkLib.<span class="apidocCodeKeywordSpan">Blynk</span>(&#x27;715f8caae9bf4a91bae319d0376caa8d&#x27;);
+var v1 = new blynk.VirtualPin(1);
+var v9 = new blynk.VirtualPin(9);
+
+v1.on(&#x27;write&#x27;, function(param) {
+  console.log(&#x27;V1:&#x27;, param);
+});
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.blynk-library.blynk.BoardMRAA" id="apidoc.element.blynk-library.blynk.BoardMRAA">
+        function <span class="apidocSignatureSpan">blynk-library.blynk.</span>BoardMRAA
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">BoardMRAA = function () {
+  var self = this;
+  var mraa = require(&#x27;mraa&#x27;);
+  console.log(&#x27;MRAA Version: &#x27; + mraa.getVersion());
+  this.init = function(blynk) {
+    self.blynk = blynk;
+  };
+  this.process = function(values) {
+    switch(values[0]) {
+      case &#x27;pm&#x27;:
+        break;
+      case &#x27;dw&#x27;: {
+        var pin = new mraa.Gpio(parseInt(values[1]));
+        pin.dir(mraa.DIR_OUT);
+        pin.write(parseInt(values[2]));
+      } break;
+      case &#x27;aw&#x27;: {
+        var pwm = new mraa.Pwm(parseInt(values[1]));
+        pwm.enable(true);
+        pwm.period_us(700);
+        pwm.write(scale(parseFloat(values[2]), 0, 255, 0, 1));
+      } break;
+      case &#x27;dr&#x27;: {
+        var pin = new mraa.Gpio(parseInt(values[1]));
+        pin.dir(mraa.DIR_IN);
+        self.blynk.sendMsg(MsgType.HW, null, [&#x27;dw&#x27;, values[1], pin.read()]);
+      } break;
+      case &#x27;ar&#x27;: {
+        var pin = new mraa.Aio(parseInt(values[1])-14); // TODO
+        self.blynk.sendMsg(MsgType.HW, null, [&#x27;aw&#x27;, values[1], pin.read()]);
+      } break;
+      default:
+        return false;
+    }
+    return true;
+  };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.blynk-library.blynk.BoardOnOff" id="apidoc.element.blynk-library.blynk.BoardOnOff">
+        function <span class="apidocSignatureSpan">blynk-library.blynk.</span>BoardOnOff
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">BoardOnOff = function () {
+  var self = this;
+  var Gpio;
+  try {
+    Gpio = require(&#x27;onoff&#x27;).Gpio;
+    console.log(&#x22;OnOff mode&#x22;);
+  } catch (e) {
+    // Workaround for Omega
+    Gpio = require(&#x27;/usr/bin/onoff-node/onoff&#x27;).Gpio;
+    console.log(&#x22;OnOff-Omega mode&#x22;);
+  }
+
+  this.init = function(blynk) {
+    self.blynk = blynk;
+  };
+  this.process = function(values) {
+    switch(values[0]) {
+      case &#x27;pm&#x27;:
+        break;
+      case &#x27;dw&#x27;:
+        var pin = new Gpio(parseInt(values[1]), &#x27;out&#x27;);
+        pin.write(parseInt(values[2]));
+        break;
+      case &#x27;dr&#x27;:
+        var pin = new Gpio(values[1], &#x27;in&#x27;);
+        pin.read(function(err, value) {
+          if (!err) {
+            self.blynk.sendMsg(MsgType.HW, null, [&#x27;dw&#x27;, values[1], value]);
+          }
+        });
+        break;
+      case &#x27;ar&#x27;:
+      case &#x27;aw&#x27;:
+        break;
+      default:
+        return false;
+    }
+    return true;
+  };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.blynk-library.blynk.SslClient" id="apidoc.element.blynk-library.blynk.SslClient">
+        function <span class="apidocSignatureSpan">blynk-library.blynk.</span>SslClient
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">SslClient = function (options) {
+  var self = this;
+  events.EventEmitter.call(this);
+
+  var options = options || {};
+  var certs_path = options.certs_path || default_certs_path;
+  self.addr = options.addr || &#x22;blynk-cloud.com&#x22;;
+  self.port = options.port || 8441;
+  // These are necessary only if using the client certificate authentication
+  self.key  = options.key  || null;
+  self.cert = options.cert || null;
+  self.pass = options.pass || null;
+  // This is necessary only if the server uses the self-signed certificate
+  self.ca   = options.ca   || [ path.join(certs_path, &#x27;server.crt&#x27;) ];
+  self.servername = options.servername || self.addr;
+
+  var net = require(&#x27;net&#x27;);
+  var tls = require(&#x27;tls&#x27;);
+  var fs = require(&#x27;fs&#x27;);
+
+  this.write = function(data) {
+    if (self.sock) {
+      self.sock.write(data, &#x27;binary&#x27;);
+    }
+  };
+
+  this.connect = function(done) {
+    if (self.sock) {
+      self.disconnect();
+    }
+
+    var opts = {
+      host: self.addr,
+      port: self.port,
+      servername: self.servername,
+      rejectUnauthorized: false,
+      family: 4
+    };
+    if (self.key) {
+      if (Buffer.isBuffer(self.key)) {
+        opts.key = self.key;
+      } else {
+        opts.key = fs.readFileSync(self.key);
+      }
+    }
+    if (self.cert) {
+      if (Buffer.isBuffer(self.cert)) {
+        opts.cert = self.cert;
+      } else {
+        opts.cert = fs.readFileSync(self.cert);
+      }
+    }
+    if (self.pass) { opts.passphrase = self.pass; }
+    if (self.ca)   {
+      if (Buffer.isBuffer(options.ca)) {
+        opts.ca = options.ca;
+      } else {
+        opts.ca = self.ca.map(function(item){
+          return fs.readFileSync(item);
+        });
+      }
+    }
+
+    console.log(&#x22;Connecting to:&#x22;, self.addr, self.port);
+    var sock = new net.Socket();
+    sock.on(&#x27;error&#x27;, function(e) {
+      console.log(e)
+    });
+    sock.connect({
+      host: self.addr,
+      family: 4,
+      port: self.port
+    }, function() {
+      console.log(&#x22;SSL authorization...&#x22;);
+      opts.socket = sock;
+      self.sock = tls.connect(opts, function() {
+        if (!self.sock.authorized) {
+          console.log(&#x27;SSL not authorized&#x27;);
+          return;
+        }
+        console.log(&#x27;Connected&#x27;);
+        self.sock.setNoDelay(true);
+        self.sock.setEncoding(&#x27;binary&#x27;);
+        self.sock.on(&#x27;data&#x27;, function(data) {
+          self.emit(&#x27;data&#x27;, data);
+        });
+        self.sock.on(&#x27;end&#x27;, function(data) {
+          self.emit(&#x27;end&#x27;, data);
+        });
+
+        done();
+      });
+
+      self.sock.on(&#x27;error&#x27;, function(err) {
+          //console.log(&#x27;error&#x27;, err.code);
+          self.emit(&#x27;error&#x27;, err);
+      });
+    });
+  };
+
+  this.disconnect = function() {
+    if (self.sock) {
+      self.sock.destroy();
+      self.sock.removeAllListeners();
+      self.sock = null;
+
+    }
+  };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+if (options.connector) {
+  this.conn = options.connector;
+} else if (isEspruino()) {
+  this.conn = new EspruinoTCP(options);
+} else if (isBrowser()) {
+  this.conn = new bl_browser.WsClient(options);
+} else {
+  this.conn = new bl_node.<span class="apidocCodeKeywordSpan">SslClient</span>(options);
+}
+
+this.buff_in = &#x27;&#x27;;
+this.msg_id = 1;
+this.vpins = [];
+this.profile = options.profile;
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.blynk-library.blynk.SslServer" id="apidoc.element.blynk-library.blynk.SslServer">
+        function <span class="apidocSignatureSpan">blynk-library.blynk.</span>SslServer
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">SslServer = function (options) {
+  var self = this;
+  events.EventEmitter.call(this);
+
+  var options = options || {};
+  var certs_path = options.certs_path || default_certs_path;
+  self.addr = options.addr || &#x22;0.0.0.0&#x22;;
+  self.port = options.port || 8443;
+  self.key  = options.key  || path.join(certs_path, &#x27;server.pem&#x27;);
+  self.cert = options.cert || path.join(certs_path, &#x27;server.crt&#x27;);
+  self.pass = options.pass || null;
+  // This is necessary only if the server uses the self-signed certificate
+  self.ca   = options.ca   || [ path.join(certs_path, &#x27;client.crt&#x27;) ];
+
+  var tls = require(&#x27;tls&#x27;);
+  var fs = require(&#x27;fs&#x27;);
+
+  this.write = function(data) {
+    if (self.sock) {
+      self.sock.write(data, &#x27;binary&#x27;);
+    }
+  };
+
+  this.connect = function(done) {
+    if (self.sock) {
+      self.disconnect();
+    }
+
+    var opts = { };
+    if (self.key)  { opts.key  = fs.readFileSync(self.key); }
+    if (self.cert) { opts.cert = fs.readFileSync(self.cert); }
+    if (self.pass) { opts.passphrase = self.pass; }
+    if (self.ca)   { opts.ca   = self.ca.map(fs.readFileSync); }
+    if (self.ca)   { opts.requestCert = true; }
+
+    self.srvr = tls.createServer(opts, function(conn) {
+      self.sock = conn;
+      console.log(self.sock.authorized ? &#x27;Authorized&#x27; : &#x27;Unauthorized&#x27;);
+      self.sock.setNoDelay(true);
+      self.sock.setEncoding(&#x27;binary&#x27;);
+      self.sock.on(&#x27;data&#x27;, function(data) {
+        self.emit(&#x27;data&#x27;, data);
+      });
+      self.sock.on(&#x27;end&#x27;, function() {
+        self.emit(&#x27;end&#x27;);
+      });
+      done();
+    });
+
+    console.log(&#x22;SSL server:&#x22;, self.addr, self.port);
+    self.srvr.listen(self.port, self.addr);
+  };
+
+  this.disconnect = function() {
+    if (self.sock) {
+      self.sock.destroy();
+      self.sock = null;
+    }
+  };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.blynk-library.blynk.TcpClient" id="apidoc.element.blynk-library.blynk.TcpClient">
+        function <span class="apidocSignatureSpan">blynk-library.blynk.</span>TcpClient
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">TcpClient = function (options) {
+  var self = this;
+  events.EventEmitter.call(this);
+
+  var options = options || {};
+  self.addr = options.addr || &#x22;blynk-cloud.com&#x22;;
+  self.port = options.port || 8442;
+
+  var net = require(&#x27;net&#x27;);
+
+  this.write = function(data) {
+    if (self.sock) {
+      self.sock.write(data, &#x27;binary&#x27;);
+    }
+  };
+
+  this.connect = function(done) {
+    if (self.sock) {
+      self.disconnect();
+    }
+    console.log(&#x22;Connecting to TCP:&#x22;, self.addr, self.port);
+    self.sock = new net.Socket();
+    self.sock.setNoDelay(true);
+    self.sock.setEncoding(&#x27;binary&#x27;);
+    self.sock.connect({
+      host: self.addr,
+      family: 4,
+      port: self.port
+    }, function() {
+      console.log(&#x27;Connected&#x27;);
+      self.sock.on(&#x27;data&#x27;, function(data) {
+        self.emit(&#x27;data&#x27;, data);
+      });
+      self.sock.on(&#x27;end&#x27;, function(data) {
+        self.emit(&#x27;end&#x27;, data);
+      });
+      done();
+    });
+    self.sock.on(&#x27;error&#x27;, function(err) {
+    	//console.log(&#x27;error&#x27;, err.code);
+        self.emit(&#x27;error&#x27;, err);
+    });
+
+  };
+
+  this.disconnect = function() {
+    if (self.sock) {
+      self.sock.destroy();
+      self.sock.removeAllListeners();
+      self.sock = null;
+    }
+  };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.blynk-library.blynk.TcpServer" id="apidoc.element.blynk-library.blynk.TcpServer">
+        function <span class="apidocSignatureSpan">blynk-library.blynk.</span>TcpServer
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">TcpServer = function (options) {
+  var self = this;
+  events.EventEmitter.call(this);
+
+  var options = options || {};
+  self.addr = options.addr || &#x27;0.0.0.0&#x27;;
+  self.port = options.port || 8442;
+
+  var net = require(&#x27;net&#x27;);
+
+  this.write = function(data) {
+    if (self.sock) {
+      self.sock.write(data, &#x27;binary&#x27;);
+    }
+  };
+
+  this.connect = function(done) {
+    if (self.sock) {
+      self.disconnect();
+    }
+
+    self.srvr = net.createServer(function(conn) {
+      self.sock = conn;
+      console.log(&#x27;Connected&#x27;);
+      self.sock.setNoDelay(true);
+      self.sock.setEncoding(&#x27;binary&#x27;);
+      self.sock.on(&#x27;data&#x27;, function(data) {
+        self.emit(&#x27;data&#x27;, data);
+      });
+      self.sock.on(&#x27;end&#x27;, function() {
+        self.emit(&#x27;end&#x27;);
+      });
+      done();
+    });
+
+    console.log(&#x22;TCP server:&#x22;, self.addr, self.port);
+    self.srvr.listen(self.port, self.addr);
+  };
+
+  this.disconnect = function() {
+    if (self.sock) {
+      self.sock.destroy();
+      self.sock = null;
+    }
+  };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.blynk-library.blynk_espruino" id="apidoc.module.blynk-library.blynk_espruino">module blynk-library.blynk_espruino</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.blynk-library.blynk_espruino.Blynk" id="apidoc.element.blynk-library.blynk_espruino.Blynk">
+        function <span class="apidocSignatureSpan">blynk-library.blynk_espruino.</span>Blynk
+        <span class="apidocSignatureSpan">(auth, options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">Blynk = function (auth, options) {
+  var self = this;
+
+  this.auth = auth;
+  var options = options || {};
+  this.heartbeat = options.heartbeat || (10*1000);
+
+  // Auto-detect board
+  if (options.board) {
+    this.board = options.board;
+  } else {
+    this.board = new BoardEspruino();
+  }
+  self.board.init(self);
+
+  // Auto-detect connector
+  if (options.connector) {
+    this.conn = options.connector;
+  } else {
+    this.conn = new EspruinoTCP(options);
+  }
+
+  this.buff_in = &#x27;&#x27;;
+  this.msg_id = 1;
+  this.vpins = [];
+  this.profile = options.profile;
+
+  this.VirtualPin = function(vPin) {
+    this.pin = vPin;
+    self.vpins[vPin] = this;
+
+    this.write = function(value) {
+      self.virtualWrite(this.pin, value);
+    };
+  };
+
+  this.WidgetBridge = function(vPin) {
+    this.pin = vPin;
+
+    this.setAuthToken = function(token) {
+      self.sendMsg(MsgType.BRIDGE, [this.pin, &#x27;i&#x27;, token]);
+    };
+    this.digitalWrite = function(pin, val) {
+      self.sendMsg(MsgType.BRIDGE, [this.pin, &#x27;dw&#x27;, pin, val]);
+    };
+    this.analogWrite = function(pin, val) {
+      self.sendMsg(MsgType.BRIDGE, [this.pin, &#x27;aw&#x27;, pin, val]);
+    };
+    this.virtualWrite = function(pin, val) {
+      self.sendMsg(MsgType.BRIDGE, [this.pin, &#x27;vw&#x27;, pin].concat(val));
+    };
+  };
+
+  this.WidgetTerminal = function(vPin) {
+    if (needsEmitter()) {
+      events.EventEmitter.call(this);
+    }
+    this.pin = vPin;
+    self.vpins[vPin] = this;
+
+    this.write = function(data) {
+      self.virtualWrite(this.pin, data);
+    };
+  };
+
+  this.WidgetLCD = function(vPin) {
+    this.pin = vPin;
+
+    this.clear = function() {
+      self.virtualWrite(this.pin, &#x27;clr&#x27;);
+    };
+    this.print = function(x, y, val) {
+      self.sendMsg(MsgType.HW, [&#x27;vw&#x27;, this.pin, &#x27;p&#x27;, x, y, val]);
+    };
+  };
+
+  this.WidgetLED = function(vPin) {
+    this.pin = vPin;
+
+    this.setValue = function(val) {
+      self.virtualWrite(this.pin, val);
+    };
+    this.turnOn = function() {
+      self.virtualWrite(this.pin, 255);
+    };
+    this.turnOff = function() {
+      self.virtualWrite(this.pin, 0);
+    };
+  };
+
+  if (!options.skip_connect) {
+    this.connect();
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+* [Blynk + JavaScript in 20 minutes (Raspberry Pi, Edison, Espruino...)](http://www.instructables.com/id/Blynk-JavaScript-in-20-
+minutes-Raspberry-Pi-Edison/)
+* [Raspberry Pi + DHT11/DHT22/AM2302](http://www.instructables.com/id/Raspberry-Pi-Nodejs-Blynk-App-DHT11DHT22AM2302/)
+
+## Usage example:
+```js
+var BlynkLib = require(&#x27;blynk-library&#x27;);
+
+var blynk = new BlynkLib.<span class="apidocCodeKeywordSpan">Blynk</span>(&#x27;715f8caae9bf4a91bae319d0376caa8d&#x27;);
+var v1 = new blynk.VirtualPin(1);
+var v9 = new blynk.VirtualPin(9);
+
+v1.on(&#x27;write&#x27;, function(param) {
+  console.log(&#x27;V1:&#x27;, param);
+});
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.blynk-library.blynk_node" id="apidoc.module.blynk-library.blynk_node">module blynk-library.blynk_node</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.blynk-library.blynk_node.BoardMRAA" id="apidoc.element.blynk-library.blynk_node.BoardMRAA">
+        function <span class="apidocSignatureSpan">blynk-library.blynk_node.</span>BoardMRAA
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">BoardMRAA = function () {
+  var self = this;
+  var mraa = require(&#x27;mraa&#x27;);
+  console.log(&#x27;MRAA Version: &#x27; + mraa.getVersion());
+  this.init = function(blynk) {
+    self.blynk = blynk;
+  };
+  this.process = function(values) {
+    switch(values[0]) {
+      case &#x27;pm&#x27;:
+        break;
+      case &#x27;dw&#x27;: {
+        var pin = new mraa.Gpio(parseInt(values[1]));
+        pin.dir(mraa.DIR_OUT);
+        pin.write(parseInt(values[2]));
+      } break;
+      case &#x27;aw&#x27;: {
+        var pwm = new mraa.Pwm(parseInt(values[1]));
+        pwm.enable(true);
+        pwm.period_us(700);
+        pwm.write(scale(parseFloat(values[2]), 0, 255, 0, 1));
+      } break;
+      case &#x27;dr&#x27;: {
+        var pin = new mraa.Gpio(parseInt(values[1]));
+        pin.dir(mraa.DIR_IN);
+        self.blynk.sendMsg(MsgType.HW, null, [&#x27;dw&#x27;, values[1], pin.read()]);
+      } break;
+      case &#x27;ar&#x27;: {
+        var pin = new mraa.Aio(parseInt(values[1])-14); // TODO
+        self.blynk.sendMsg(MsgType.HW, null, [&#x27;aw&#x27;, values[1], pin.read()]);
+      } break;
+      default:
+        return false;
+    }
+    return true;
+  };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.blynk-library.blynk_node.BoardOnOff" id="apidoc.element.blynk-library.blynk_node.BoardOnOff">
+        function <span class="apidocSignatureSpan">blynk-library.blynk_node.</span>BoardOnOff
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">BoardOnOff = function () {
+  var self = this;
+  var Gpio;
+  try {
+    Gpio = require(&#x27;onoff&#x27;).Gpio;
+    console.log(&#x22;OnOff mode&#x22;);
+  } catch (e) {
+    // Workaround for Omega
+    Gpio = require(&#x27;/usr/bin/onoff-node/onoff&#x27;).Gpio;
+    console.log(&#x22;OnOff-Omega mode&#x22;);
+  }
+
+  this.init = function(blynk) {
+    self.blynk = blynk;
+  };
+  this.process = function(values) {
+    switch(values[0]) {
+      case &#x27;pm&#x27;:
+        break;
+      case &#x27;dw&#x27;:
+        var pin = new Gpio(parseInt(values[1]), &#x27;out&#x27;);
+        pin.write(parseInt(values[2]));
+        break;
+      case &#x27;dr&#x27;:
+        var pin = new Gpio(values[1], &#x27;in&#x27;);
+        pin.read(function(err, value) {
+          if (!err) {
+            self.blynk.sendMsg(MsgType.HW, null, [&#x27;dw&#x27;, values[1], value]);
+          }
+        });
+        break;
+      case &#x27;ar&#x27;:
+      case &#x27;aw&#x27;:
+        break;
+      default:
+        return false;
+    }
+    return true;
+  };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.blynk-library.blynk_node.SslClient" id="apidoc.element.blynk-library.blynk_node.SslClient">
+        function <span class="apidocSignatureSpan">blynk-library.blynk_node.</span>SslClient
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">SslClient = function (options) {
+  var self = this;
+  events.EventEmitter.call(this);
+
+  var options = options || {};
+  var certs_path = options.certs_path || default_certs_path;
+  self.addr = options.addr || &#x22;blynk-cloud.com&#x22;;
+  self.port = options.port || 8441;
+  // These are necessary only if using the client certificate authentication
+  self.key  = options.key  || null;
+  self.cert = options.cert || null;
+  self.pass = options.pass || null;
+  // This is necessary only if the server uses the self-signed certificate
+  self.ca   = options.ca   || [ path.join(certs_path, &#x27;server.crt&#x27;) ];
+  self.servername = options.servername || self.addr;
+
+  var net = require(&#x27;net&#x27;);
+  var tls = require(&#x27;tls&#x27;);
+  var fs = require(&#x27;fs&#x27;);
+
+  this.write = function(data) {
+    if (self.sock) {
+      self.sock.write(data, &#x27;binary&#x27;);
+    }
+  };
+
+  this.connect = function(done) {
+    if (self.sock) {
+      self.disconnect();
+    }
+
+    var opts = {
+      host: self.addr,
+      port: self.port,
+      servername: self.servername,
+      rejectUnauthorized: false,
+      family: 4
+    };
+    if (self.key) {
+      if (Buffer.isBuffer(self.key)) {
+        opts.key = self.key;
+      } else {
+        opts.key = fs.readFileSync(self.key);
+      }
+    }
+    if (self.cert) {
+      if (Buffer.isBuffer(self.cert)) {
+        opts.cert = self.cert;
+      } else {
+        opts.cert = fs.readFileSync(self.cert);
+      }
+    }
+    if (self.pass) { opts.passphrase = self.pass; }
+    if (self.ca)   {
+      if (Buffer.isBuffer(options.ca)) {
+        opts.ca = options.ca;
+      } else {
+        opts.ca = self.ca.map(function(item){
+          return fs.readFileSync(item);
+        });
+      }
+    }
+
+    console.log(&#x22;Connecting to:&#x22;, self.addr, self.port);
+    var sock = new net.Socket();
+    sock.on(&#x27;error&#x27;, function(e) {
+      console.log(e)
+    });
+    sock.connect({
+      host: self.addr,
+      family: 4,
+      port: self.port
+    }, function() {
+      console.log(&#x22;SSL authorization...&#x22;);
+      opts.socket = sock;
+      self.sock = tls.connect(opts, function() {
+        if (!self.sock.authorized) {
+          console.log(&#x27;SSL not authorized&#x27;);
+          return;
+        }
+        console.log(&#x27;Connected&#x27;);
+        self.sock.setNoDelay(true);
+        self.sock.setEncoding(&#x27;binary&#x27;);
+        self.sock.on(&#x27;data&#x27;, function(data) {
+          self.emit(&#x27;data&#x27;, data);
+        });
+        self.sock.on(&#x27;end&#x27;, function(data) {
+          self.emit(&#x27;end&#x27;, data);
+        });
+
+        done();
+      });
+
+      self.sock.on(&#x27;error&#x27;, function(err) {
+          //console.log(&#x27;error&#x27;, err.code);
+          self.emit(&#x27;error&#x27;, err);
+      });
+    });
+  };
+
+  this.disconnect = function() {
+    if (self.sock) {
+      self.sock.destroy();
+      self.sock.removeAllListeners();
+      self.sock = null;
+
+    }
+  };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+if (options.connector) {
+  this.conn = options.connector;
+} else if (isEspruino()) {
+  this.conn = new EspruinoTCP(options);
+} else if (isBrowser()) {
+  this.conn = new bl_browser.WsClient(options);
+} else {
+  this.conn = new bl_node.<span class="apidocCodeKeywordSpan">SslClient</span>(options);
+}
+
+this.buff_in = &#x27;&#x27;;
+this.msg_id = 1;
+this.vpins = [];
+this.profile = options.profile;
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.blynk-library.blynk_node.SslServer" id="apidoc.element.blynk-library.blynk_node.SslServer">
+        function <span class="apidocSignatureSpan">blynk-library.blynk_node.</span>SslServer
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">SslServer = function (options) {
+  var self = this;
+  events.EventEmitter.call(this);
+
+  var options = options || {};
+  var certs_path = options.certs_path || default_certs_path;
+  self.addr = options.addr || &#x22;0.0.0.0&#x22;;
+  self.port = options.port || 8443;
+  self.key  = options.key  || path.join(certs_path, &#x27;server.pem&#x27;);
+  self.cert = options.cert || path.join(certs_path, &#x27;server.crt&#x27;);
+  self.pass = options.pass || null;
+  // This is necessary only if the server uses the self-signed certificate
+  self.ca   = options.ca   || [ path.join(certs_path, &#x27;client.crt&#x27;) ];
+
+  var tls = require(&#x27;tls&#x27;);
+  var fs = require(&#x27;fs&#x27;);
+
+  this.write = function(data) {
+    if (self.sock) {
+      self.sock.write(data, &#x27;binary&#x27;);
+    }
+  };
+
+  this.connect = function(done) {
+    if (self.sock) {
+      self.disconnect();
+    }
+
+    var opts = { };
+    if (self.key)  { opts.key  = fs.readFileSync(self.key); }
+    if (self.cert) { opts.cert = fs.readFileSync(self.cert); }
+    if (self.pass) { opts.passphrase = self.pass; }
+    if (self.ca)   { opts.ca   = self.ca.map(fs.readFileSync); }
+    if (self.ca)   { opts.requestCert = true; }
+
+    self.srvr = tls.createServer(opts, function(conn) {
+      self.sock = conn;
+      console.log(self.sock.authorized ? &#x27;Authorized&#x27; : &#x27;Unauthorized&#x27;);
+      self.sock.setNoDelay(true);
+      self.sock.setEncoding(&#x27;binary&#x27;);
+      self.sock.on(&#x27;data&#x27;, function(data) {
+        self.emit(&#x27;data&#x27;, data);
+      });
+      self.sock.on(&#x27;end&#x27;, function() {
+        self.emit(&#x27;end&#x27;);
+      });
+      done();
+    });
+
+    console.log(&#x22;SSL server:&#x22;, self.addr, self.port);
+    self.srvr.listen(self.port, self.addr);
+  };
+
+  this.disconnect = function() {
+    if (self.sock) {
+      self.sock.destroy();
+      self.sock = null;
+    }
+  };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.blynk-library.blynk_node.TcpClient" id="apidoc.element.blynk-library.blynk_node.TcpClient">
+        function <span class="apidocSignatureSpan">blynk-library.blynk_node.</span>TcpClient
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">TcpClient = function (options) {
+  var self = this;
+  events.EventEmitter.call(this);
+
+  var options = options || {};
+  self.addr = options.addr || &#x22;blynk-cloud.com&#x22;;
+  self.port = options.port || 8442;
+
+  var net = require(&#x27;net&#x27;);
+
+  this.write = function(data) {
+    if (self.sock) {
+      self.sock.write(data, &#x27;binary&#x27;);
+    }
+  };
+
+  this.connect = function(done) {
+    if (self.sock) {
+      self.disconnect();
+    }
+    console.log(&#x22;Connecting to TCP:&#x22;, self.addr, self.port);
+    self.sock = new net.Socket();
+    self.sock.setNoDelay(true);
+    self.sock.setEncoding(&#x27;binary&#x27;);
+    self.sock.connect({
+      host: self.addr,
+      family: 4,
+      port: self.port
+    }, function() {
+      console.log(&#x27;Connected&#x27;);
+      self.sock.on(&#x27;data&#x27;, function(data) {
+        self.emit(&#x27;data&#x27;, data);
+      });
+      self.sock.on(&#x27;end&#x27;, function(data) {
+        self.emit(&#x27;end&#x27;, data);
+      });
+      done();
+    });
+    self.sock.on(&#x27;error&#x27;, function(err) {
+    	//console.log(&#x27;error&#x27;, err.code);
+        self.emit(&#x27;error&#x27;, err);
+    });
+
+  };
+
+  this.disconnect = function() {
+    if (self.sock) {
+      self.sock.destroy();
+      self.sock.removeAllListeners();
+      self.sock = null;
+    }
+  };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.blynk-library.blynk_node.TcpServer" id="apidoc.element.blynk-library.blynk_node.TcpServer">
+        function <span class="apidocSignatureSpan">blynk-library.blynk_node.</span>TcpServer
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">TcpServer = function (options) {
+  var self = this;
+  events.EventEmitter.call(this);
+
+  var options = options || {};
+  self.addr = options.addr || &#x27;0.0.0.0&#x27;;
+  self.port = options.port || 8442;
+
+  var net = require(&#x27;net&#x27;);
+
+  this.write = function(data) {
+    if (self.sock) {
+      self.sock.write(data, &#x27;binary&#x27;);
+    }
+  };
+
+  this.connect = function(done) {
+    if (self.sock) {
+      self.disconnect();
+    }
+
+    self.srvr = net.createServer(function(conn) {
+      self.sock = conn;
+      console.log(&#x27;Connected&#x27;);
+      self.sock.setNoDelay(true);
+      self.sock.setEncoding(&#x27;binary&#x27;);
+      self.sock.on(&#x27;data&#x27;, function(data) {
+        self.emit(&#x27;data&#x27;, data);
+      });
+      self.sock.on(&#x27;end&#x27;, function() {
+        self.emit(&#x27;end&#x27;);
+      });
+      done();
+    });
+
+    console.log(&#x22;TCP server:&#x22;, self.addr, self.port);
+    self.srvr.listen(self.port, self.addr);
+  };
+
+  this.disconnect = function() {
+    if (self.sock) {
+      self.sock.destroy();
+      self.sock = null;
+    }
+  };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocFooterDiv">
+    [ this document was created with
+    <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a>
+    ]
+</div>
+</div>
